@@ -1,4 +1,6 @@
 #!/bin/bash
+#### Alexis Gaete Olivares
+#### Challenge mercado libre
 
 working_dir='/root/challenge/meli'
 date=$(date +"%Y%m%d")
