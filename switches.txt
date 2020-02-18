@@ -1,0 +1,7 @@
+switch01
+switch02
+switch03
+switch04
+switch05
+switch06
+switch07
