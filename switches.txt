@@ -35,7 +35,6 @@ switch34
 switch35
 switch36
 switch37
-switch37
 switch38
 switch39
 switch40
