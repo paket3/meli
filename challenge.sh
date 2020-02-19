@@ -16,7 +16,7 @@ echo $date_dotw
 while IFS= read -r line
 do
 	mkdir -p $working_dir/backups/$line
-	rm -rf $working_dir/backups/$line/running-config
+	rm -rf $working_dir/backups/$line/running-config_$date
 	echo "Copiando configuraciones desde $line"
 #	if [ $date_day -eq 1 ]
 #	then
