@@ -32,9 +32,25 @@ do
 	fi
 done < "$working_dir/switches.txt"
 
+#### busqueda de respaldos antiguos para cumplir la condicion de tener 7 copias de cada config
+echo "Buscando y borrando respaldos mensuales con mas de 30 dias de antiguedad"
+find $working_dir -mtime +30 -type f -name "*_montly_*" -exec ls -l {} \;
+#find $working_dir -mtime +30 -type f -name "*_montly_*" -exec rm -f {} \;
+
+echo "Buscando y borrando respaldos semanales con mas de 7 dias de antiguedad"
+find $working_dir -mtime +7 -type f -name "*_weekly_*" -exec ls -l {} \;
+#find $working_dir -mtime +7 -type f -name "*_weekly_*" -exec rm -f {} \;
+
+echo "Buscando y borrando respaldos diarios con mas de 5 dias de antiguedad"
+find $working_dir -mtime +5 -type f -name "*_diary_*" -exec ls -l {} \;
+#find $working_dir -mtime +5 -type f -name "*_diary_*" -exec rm -f {} \;
+
 
 #### actualizacion de repositorio con configuraciones
 cd $working_dir
 git add -A .
 git commit -m "actualizacion respaldo configuraciones $date" -a
 git push
+
+
+echo "Respaldos y actualizacion de repositorio finalizado"
