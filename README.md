@@ -5,3 +5,6 @@ Se verifica si es el primer dia del mes, si es domingo o si es dia de semana par
 Luego se verifican que no exista mas de 1 respaldo mensual, 1 respaldo semanal y 5 respaldos diario.
 Para terminar se actualiza el repositorio github para almacenar los respaldos de configuraciones.
 Dicho repositorio esta ordenado en subdirectorios, en donde cada uno corresponde aun switch y esta identificado por su hostname.
+
+El script se ejecutara con el siguiente cron
+0 1 1 * 0-5 <path_to_bash> <path_to_script>
