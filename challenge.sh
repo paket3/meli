@@ -9,9 +9,6 @@ date=$(date +"%Y%m%d")
 date_day=$(date +"%d")
 #### Variable para capturar el dia domingo (day of the week)
 date_dotw=$(date +"%A")
-echo $date
-echo $date_day
-echo $date_dotw
 
 while IFS= read -r line
 do
