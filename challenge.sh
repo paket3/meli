@@ -47,10 +47,10 @@ find $working_dir -mtime +5 -type f -name "*_diary_*" -exec ls -l {} \;
 
 
 #### actualizacion de repositorio con configuraciones
-cd $working_dir
-git add -A .
-git commit -m "actualizacion respaldo configuraciones $date" -a
-git push
+#cd $working_dir
+#git add -A .
+#git commit -m "actualizacion respaldo configuraciones $date" -a
+#git push
 
 
-echo "Respaldos y actualizacion de repositorio finalizado"
+#echo "Respaldos y actualizacion de repositorio finalizado"
