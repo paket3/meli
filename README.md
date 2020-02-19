@@ -11,3 +11,6 @@ El script se ejecutara con el siguiente cron
 0 1 1 * 0-5 <path_to_bash> <path_to_script>
 
 Esto lo ejecutara a las 01 am del primer dia del mes y todos los dias de la semana desde el domingo hasta el viernes.
+
+
+Alexis Gaete Olivares
