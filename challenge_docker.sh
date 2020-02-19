@@ -9,9 +9,6 @@ date=$(date +"%Y%m%d")
 date_day=$(date +"%d")
 #### Variable para capturar el dia domingo (day of the week)
 date_dotw=$(date +"%A")
-echo $date
-echo $date_day
-echo $date_dotw
 
 while IFS= read -r line
 do
@@ -46,11 +43,6 @@ find $working_dir -mtime +5 -type f -name "*_diary_*" -exec ls -l {} \;
 #find $working_dir -mtime +5 -type f -name "*_diary_*" -exec rm -f {} \;
 
 
-#### actualizacion de repositorio con configuraciones
-cd $working_dir
-git add -A .
-git commit -m "actualizacion respaldo configuraciones $date" -a
-git push
 
 
 echo "Respaldos y actualizacion de repositorio finalizado"

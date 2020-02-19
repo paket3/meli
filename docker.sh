@@ -8,7 +8,7 @@ date=$(date +"%Y%m%d")
 echo "Levantando contenedor docker"
 docker run -d -it --name meli -v '/root:/root' -v '/etc/hosts:/etc/hosts' kroniak/ssh-client
 echo "Ejecutando script desde contenedor docker"
-docker exec -it meli /bin/bash /root/challenge/meli/challenge.sh
+docker exec -it meli /bin/bash /root/challenge/meli/challenge_docker.sh
 echo "Deteniendo contenedor"
 docker stop meli
 echo "Borrando contenedor"
