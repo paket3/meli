@@ -22,7 +22,7 @@ do
 	then
 		echo "Realizando respaldo mensual"
 		scp -o StrictHostKeyChecking=no $line:/flash/running-config $working_dir/backups/$line/running-config_monthly_$date
-	elif [ $date_dotw == "domingo" ]
+	elif [ $date_dotw == "domingo" ]  ## la distribucion de linux que estoy usando esta en español
 	then
 		echo "Realizando respaldo semanal"
 		scp -o StrictHostKeyChecking=no $line:/flash/running-config $working_dir/backups/$line/running-config_weekly_$date
